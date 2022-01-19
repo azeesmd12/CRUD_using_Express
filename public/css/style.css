@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h3{
+    border-bottom: 1px solid #afafaf;
+    padding-bottom: 10px;   
+}
+html{
+    background-color:gray;
+}
+
+body{
+    background-color: white;
+    margin: 0 auto;
+    height: 500px;
+    width: 800px;
+    padding-top: 20px;
+}
+table{
+    width: 100%;
+    padding: 10px;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+table thead td{
+    background-color: lightgray;
+    padding: 5px;
+    color: white;
+    border: 1px solid black;
+}
+table tbody td{
+    padding:5px ;
+    border: 1px solid black;
+}
+
+.edit,.delete,.adduser{
+    text-decoration: none;
+    background-color: violet;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+    padding:2px;
+}
+.delete{
+    background-color: red;
+}
+.adduser{
+    background-color: green;
+}
+p{
+    text-align: right;
+}
+
+.form-group{
+    background-color: green;
+}
+
+

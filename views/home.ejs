@@ -1,0 +1,28 @@
+<h3>Employee Details</h3>
+<p><a class="adduser" href="/adduser">add user</a></p>
+<table>
+    <thead>
+        <tr>
+            <td>#</td>
+            <td>Employee Name</td>
+            <td>Email</td>
+            <td>mobile</td>
+            <td>Resume</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+    </thead>
+    <tbody>
+        <% for(let employee of result) { %>
+        <tr>
+            <td><%= employee.id %></td>
+            <td><%= employee.emp_name %></td>
+            <td><%= employee.email %></td>
+            <td><%= employee.mobile %></td>
+            <td>Resume.doc</td>
+            <td><a href="/edit/<%= employee.id %>" class="edit">Edit</a></td>
+            <td><a onclick="return confirm('Are you sure?')" href="/delete/<%= employee.id %>" class="delete">Delete</a></td>
+        </tr>
+        <% } %>
+    </tbody>
+</table>
